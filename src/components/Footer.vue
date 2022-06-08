@@ -46,11 +46,11 @@
             <a id="sign" href="#"><span>SIGN-UP NOW!</span></a>
             <div id="icon">
                 <span><font color="blue">FOLLOW US</font></span>
-                <img src="../assets/img/footer-facebook.png" alt="logo facebook">
-                <img src="../assets/img/footer-twitter.png" alt="logo twitter">
-                <img src="../assets/img/footer-youtube.png" alt="logo youtube">
-                <img src="../assets/img/footer-pinterest.png" alt="logo pinterest">
-                <img src="../assets/img/footer-periscope.png" alt="logo periscope">
+                <a href="#"><img src="../assets/img/footer-facebook.png" alt="logo facebook"></a>
+                <a href="#"><img src="../assets/img/footer-twitter.png" alt="logo twitter"></a>
+                <a href="#"><img src="../assets/img/footer-youtube.png" alt="logo youtube"></a>
+                <a href="#"><img src="../assets/img/footer-pinterest.png" alt="logo pinterest"></a>
+                <a href="#"><img src="../assets/img/footer-periscope.png" alt="logo periscope"></a>
             </div>
         </div>
     </footer>
