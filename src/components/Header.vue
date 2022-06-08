@@ -84,7 +84,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 header{
-    margin-top: 2%;
+    margin-top: 10px;
 }
 
 .container{
@@ -96,7 +96,7 @@ header{
 li{
     display: inline;
     list-style-type: none;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .space-left{
