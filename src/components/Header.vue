@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <a href="">
+            <a href="#">
                 <img src="../assets/img/dc-logo.png" alt="logo dc comics">
             </a>
 
@@ -9,7 +9,7 @@
                 <nav>
                     <ul>
                         <li v-for="(link, index) in links" :key="index">
-                            <a :href="link.url">{{link.text}}</a>
+                            <a id="bordo" :href="link.url">{{link.text}}</a>
                         </li>
                     </ul>
                 </nav>
@@ -103,15 +103,15 @@ li{
     margin-right: 10%;
 }
 
-a{
+#bordo{
     color: black;
     text-decoration: none;
 }
 
-a:hover{
+#bordo:hover{
     color: rgb(14, 17, 214);
     border-bottom: 3px solid blue;
-    padding-bottom: 5%;
+    padding-bottom: 42px;
 }
 
 </style>
