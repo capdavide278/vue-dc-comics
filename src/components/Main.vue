@@ -1,7 +1,18 @@
 <template>
     <main>
         <section>
-            <p>Content goes Here</p>
+            <div id="in_vista">
+                <ul>
+                    <li v-for="(element, i) in merce" :key="i">
+                        <a><img :src="element.thumb" alt=""></a>
+                        <div>{{element.series}}</div>
+                    </li>
+                </ul>
+            </div>
+
+        <div id="read_more">
+            <a id="load_more" href="#"><p>LOAD MORE</p></a>
+        </div>
         </section>
 
         <section id="shop">
@@ -53,22 +64,62 @@ export default {
 
           ]
       }
-
-  }
+    },
+    props:{
+        merce: Array,
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 section{
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     /* height: 150px; */
 }
 
-p{
-    padding: 3% 14%;
-    color: white;
-    font-size: 25px;
+#in_vista{
+    display: flex;
+    justify-content: center;
+
+
+    img{
+        height: 220px;
+        width: 200px;
+        padding-bottom: 20px;
+    }
+    div{
+        /* padding: 3% 14%; */
+        color: white;
+        /* font-size: 15px; */
+        max-width: 200px;
+    }
+
+    li{
+        margin: 15px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+#read_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+    background-color: rgb(4, 84, 158);
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 15%;
+    }
+
 }
 
 #shop{
