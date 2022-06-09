@@ -195,7 +195,7 @@ data(){
 <style scoped>
 .container{
     background-image: url("../assets/img/footer-bg.jpg");
-    height: 650px;
+    /* height: 650px; */
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -238,7 +238,7 @@ a{
     height: 650px;
     background-repeat: no-repeat;
     opacity: 0.5;
-   /*  transform: rotate(-3deg); */
+   
 }
 
 #seconda_parte{
