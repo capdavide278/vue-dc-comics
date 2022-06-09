@@ -2,14 +2,16 @@
     <main>
         <section>
             <div id="jumbo"></div>
+            <div id="serie">
+                <a href="#"><h2>CURRENT SERIES</h2></a>
+            </div>
         </section>
-
         <section>
             <div id="in_vista">
                 <ul>
                     <li v-for="(element, i) in merce" :key="i">
-                        <a><img :src="element.thumb" alt=""></a>
-                        <div>{{element.series}}</div>
+                        <a><img :src="element.thumb" alt="">
+                        <div>{{element.series}}</div></a>
                     </li>
                 </ul>
             </div>
@@ -22,7 +24,7 @@
         <section id="shop">
             <ul>
                 <li v-for="(link, index) in links" :key="index">
-                    <a :href="link.url"><img :src="link.img" alt=""><span>{{link.text}}</span></a>
+                    <a id="options" :href="link.url"><img :src="link.img" alt=""><span>{{link.text}}</span></a>
                 </li>
             </ul>
         </section>
@@ -77,6 +79,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#serie{
+    width: 300px;
+    padding: 30px;
+    margin-left: 250px;
+    background-color:rgb(4, 84, 158) ;
+    object-position: 25% 75%;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
 
 #jumbo{
     background-image: url("../assets/img/jumbotron.jpg");
@@ -128,8 +142,13 @@ section{
     margin-bottom: 20px;
     padding: 15px;
     width: 15%;
+    color: white;
+    text-decoration:none;
     }
 
+    p{
+        text-align: center;
+    }
 }
 
 #shop{
@@ -147,7 +166,7 @@ li{
     margin: 0 15px;
 }
 
-a{
+#options{
     color: white;
     text-decoration: none;
     display: flex;

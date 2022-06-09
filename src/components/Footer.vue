@@ -234,16 +234,18 @@ a{
     background-image: url("../assets/img/dc-logo.png");
     background-size: 100%;
     background-position: center;
-    width: 50%;
-    height: 650px;
+    width: 400px;
+    height: 350px;
     background-repeat: no-repeat;
     opacity: 0.5;
-   
+    object-fit: cover;
+    margin-left: 150px;
+    transform: rotate(-0deg);
 }
 
 #seconda_parte{
     background-color: rgb(44, 43, 43);
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
