@@ -1,6 +1,10 @@
 <template>
     <main>
         <section>
+            <div id="jumbo"></div>
+        </section>
+
+        <section>
             <div id="in_vista">
                 <ul>
                     <li v-for="(element, i) in merce" :key="i">
@@ -73,6 +77,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+#jumbo{
+    background-image: url("../assets/img/jumbotron.jpg");
+    height: 410px;
+}
+
 section{
     background-color: rgb(37, 37, 37);
     /* height: 150px; */
